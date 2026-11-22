@@ -19,7 +19,7 @@ export function Plot({ title, caption, extent, children, onPointerDown, onPointe
   const id = useId()
   const unit = plotRadius / extent
   const point = (z: Complex) => ({ x: centerX + unit * z.x, y: centerY - unit * z.y })
-  const tickSize = extent <= 1.5 ? .25 : extent <= 5 ? 1 : extent <= 10 ? 2 : extent <= 25 ? 5 : 10
+  const tickSize = extent <= 1.5 ? .5 : extent <= 5 ? 1 : extent <= 10 ? 2 : extent <= 25 ? 5 : 10
   const ticks = Array.from({ length: Math.ceil(extent / tickSize) * 2 + 1 },
     (_, i) => (i - Math.ceil(extent / tickSize)) * tickSize)
   const location = (e: PointerEvent<SVGSVGElement>) => {
