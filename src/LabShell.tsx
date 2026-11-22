@@ -2,12 +2,14 @@ import { useEffect, useState } from 'react'
 import App from './App'
 import ContourLab from './labs/ContourLab'
 import DerivativeLab from './labs/DerivativeLab'
+import FourierLab from './labs/FourierLab'
 import './labs/labs.css'
 
 const tabs = [
   { id: 'multiply', label: '复数乘法' },
   { id: 'contour', label: '围道积分' },
   { id: 'derivative', label: '复导数探针' },
+  { id: 'fourier', label: '傅里叶调音台' },
 ] as const
 
 type LabId = (typeof tabs)[number]['id']
@@ -36,6 +38,7 @@ export default function LabShell() {
     </nav>
     {lab === 'contour' && <ContourLab />}
     {lab === 'derivative' && <DerivativeLab />}
+    {lab === 'fourier' && <FourierLab />}
     {lab === 'multiply' && <App />}
   </>
 }

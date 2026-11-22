@@ -116,3 +116,30 @@
   .probe-stats > div { padding: .55rem; }
   .probe-stats strong { font-size: .95rem; }
 }
+.tone-controls { border: 1px solid #d9e5dc; border-radius: .55rem; padding: .35rem .65rem .55rem; min-width: 0; }
+.tone-controls legend { padding: 0 .25rem; font-weight: 600; }
+.tone-a legend, .signal-key-a { color: #365da4; }
+.tone-b legend, .signal-key-b { color: #965924; }
+.tone-controls .lab-paired { margin-top: .35rem; }
+.tone-controls .lab-paired label span { flex-wrap: wrap; gap: 0 .25rem; }
+.signal-grid { stroke: #e2ebe1; }
+.signal-axis { stroke: #9bae9e; }
+.signal-a, .signal-b, .signal-sum { fill: none; stroke-linejoin: round; stroke-linecap: round; }
+.signal-a { stroke: #466ab0; stroke-width: 1.5; stroke-dasharray: 5 4; }
+.signal-b { stroke: #b06d2d; stroke-width: 1.6; stroke-dasharray: 1 3; }
+.signal-sum { stroke: #146f5c; stroke-width: 2.2; }
+.signal-sample { fill: #146f5c; opacity: .58; }
+.signal-stem { color: #678474; }
+.signal-peak { color: #146f5c; }
+.signal-peak line, .signal-stem line { stroke: currentColor; stroke-width: 1.4; }
+.signal-peak line { stroke-width: 2.4; }
+.signal-peak circle, .signal-stem circle { fill: currentColor; }
+.signal-key, .signal-peaks { grid-column: 1 / -1; background: white; border: 1px solid var(--lab-line); border-radius: .65rem; padding: .65rem .85rem; }
+.signal-key { display: flex; align-items: center; flex-wrap: wrap; gap: .15rem 1rem; font-size: .9rem; }
+.signal-key-sum { color: #146f5c; }
+.signal-peaks h2 { margin: 0 0 .35rem; font-size: 1.05rem; }
+.signal-peaks ul { display: flex; flex-wrap: wrap; list-style: none; padding: 0; margin: 0; gap: .4rem; }
+.signal-peaks li { display: flex; align-items: baseline; flex-wrap: wrap; gap: .15rem .65rem; padding: .38rem .65rem; border-radius: .4rem; background: #edf5ee; }
+.signal-peaks li strong { color: #146f5c; }
+.signal-peaks li span, .signal-peaks p { font-size: .9rem; color: #475f53; }
+.signal-peaks p { margin: 0; }
